@@ -1,4 +1,7 @@
+SET DATABASE TRANSACTION CONTROL MVCC;
+
 DROP TABLE people IF EXISTS;
+
 
 CREATE TABLE people  (
     person_id BIGINT IDENTITY NOT NULL PRIMARY KEY,
@@ -8,7 +11,7 @@ CREATE TABLE people  (
 );
 
 INSERT INTO people(first_name, last_name, email) VALUES
-('Farah', 'Ben', 'farahben@wanadoo.fr'),
+('Farah', 'Ben', 'farahbentest@wanadoo.fr'),
 ('Pierre', 'Bebon', 'beb97@hotmail.com'),
 ('Student', 'Ocr', 'test@email.com')
 ;
